@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FLE",
+  "version": "1.0",
+
+ 
+  "action":{},
+  "permissions": [
+      "tabs",
+      "storage"
+  ],
+
+  "content_scripts":[
+    {
+      "matches":["https://freelancehunt.com/project*"],
+      "run_at":"document_end",
+      "all_frames":true,
+      "js":["fle-includes.js","fle-content.js"],
+      "css":["fle-content.css"]
+    }
+  ]
+  
+}

@@ -1,0 +1,164 @@
+/* .textBon{
+    padding: 10px;
+    background-color: rgb(74, 177, 70);
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+} */
+
+.fle-mod *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.fle-ncblock{
+    margin-top: 20px;
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.fle-pricetot{
+    margin-left: 210px;
+    font-size: large;
+    font-weight: 600;
+    color: #44975a;
+}
+
+.fle-ava{
+
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.fle-mod{
+    display: none;
+    line-height: normal;
+    position: absolute;
+    gap: 5px;
+    top:0;
+    left: 0;
+    margin-left: 50px;
+    width: max(50vw, 638px);
+    height: 40vh;
+    border-radius: 12px;
+    background-color: #fffffff2;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 9px 10px #99999933;
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.fle-ava.fle-active:hover .fle-mod{
+    display: flex;
+    cursor: pointer;
+}
+
+.disp{
+    display: flex;
+
+}
+.fcont{
+    flex-grow: 0;
+    height: 100%;   
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.fletitle{
+
+    font-size: larger;
+    color: #969696;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.fletext{
+
+    font-size: medium;
+    color: #969696;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tlittle{
+    font-size: small;
+}
+
+.flegreen{
+    color: #44975a;
+}
+
+.fcontleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fcontleft .fle-ava{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+.fleainfo{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.flelastauthorprojects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px ;
+    gap: 5px;
+    overflow-y: auto;
+    
+}
+.flelastauthorprojects::-webkit-scrollbar{
+    width: 4px;
+    background-color: #ebebeb;
+}
+.lastproject{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px 10px;
+    background-color: #f8f8f8;
+}
+.pname{
+    overflow: hidden;
+    text-wrap-mode:nowrap;
+    max-width: 80%;
+}
+.pprice{
+    background-color: #44975a;
+    text-wrap-mode:nowrap;
+    padding: 0 3px;
+    border-radius: 3px;
+    color: #1d5727;
+    font-weight: 700;
+}
