@@ -166,52 +166,6 @@ class LocStor {
 
 }
 
-// class Flecache {
-//     projects = fleStor.getProjects()
-
-//     addProjects = (prolist) =>{
-
-//         if (!prolist) return;
-
-//         let inkeys = Object.keys(this.projects)
-//         let prokeys = Object.keys(prolist)
-//         console.log(prolist);
-//         console.log(this.projects);
-        
-//         prokeys.forEach(k =>{
-//             if (!inkeys.includes(k)){
-//                 this.projects[k]=prolist[k]
-//             }
-//         })
-
-//     }
-
-//     getProjects = (prolist) =>{
-
-//         if (!prolist) return;
-
-//         let projecstfromcache = {}
-//         let projecsttofetch = []
-
-//         let inkeys = Object.keys(this.projects)
-        
-//         prolist.forEach(k =>{
-//             if (!inkeys.includes(k)){
-//                 projecsttofetch.push(k)
-//                 // console.log(k, 'not in cache')
-//             }else{
-//                 projecstfromcache[k]=this.projects[k]
-//             }
-//         })
-//         return {projecstfromcache,projecsttofetch}
-//     }
-
-
-// }
-
-// var FleCache = new Flecache()
-
-
 const fetchdata = async (urllist) => {
 
     let {projecstfromcache,projecsttofetch}=fleStor.getProjects(urllist)

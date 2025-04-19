@@ -41,12 +41,14 @@
     background-color: #f1f1f1;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
     border-radius: 100%;
     margin-top: 10px;
     margin-left: 10px;
-    
+    background-size: cover;
+    background-clip: content-box;
 }
+    
+
 
 .fle-mod{
     display: none;
